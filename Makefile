@@ -1,6 +1,6 @@
 .PHONY: runserver
 runserver:
-	poetry run uvicorn evergarden.main:app
+	poetry run uvicorn evergarden.main:app --reload
 
 .PHONY: dev-deploy
 dev-deploy:
