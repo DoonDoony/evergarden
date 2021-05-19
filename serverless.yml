@@ -26,6 +26,8 @@ provider:
 package:
   patterns:
     - evergarden/**
+    # documents
+    - '*.md'
     # dot files
     - '.DS_Store'
     - '.envrc'
@@ -38,6 +40,7 @@ package:
     - 'Makefile'
     # directories
     - '.idea/**'
+    - '.mypy_cache/**'
     - '!.git/**'
     - '!node_modules/**'
 
