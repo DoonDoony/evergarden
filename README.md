@@ -59,3 +59,4 @@ $ make dev-deploy
 
 ## ✅ Todo
 - [ ] Wrap project into Docker
+- [ ] Setup GitHub Actions
