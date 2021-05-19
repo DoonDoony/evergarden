@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "evergarden"
+version = "0.1.0"
+description = "A ghostwriter Violet Evergarden for person who cannot write markdown"
+authors = ["Doon"]
+license = "BSD"
+
+[tool.poetry.dependencies]
+python = "^3.9.4"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.12.1"
+mypy = "^0.812"
+pytest = "^6.2.4"
+isort = "^5.8.0"
+flake8 = "^3.9.2"
+ipython = "^7.23.1"
+pytest-cov = "^2.12.0"
+black = "^21.5b1"
+autoflake = "^1.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 119
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | \.python-version
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
