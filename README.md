@@ -60,3 +60,5 @@ $ make dev-deploy
 ## ✅ Todo
 - [ ] Wrap project into Docker
 - [ ] Setup GitHub Actions
+- [ ] Apply HMAC authentication to prevent abusing
+- [ ] Use AWS API Gateway api key
